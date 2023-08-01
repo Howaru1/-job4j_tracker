@@ -21,6 +21,7 @@ public class Cat {
         String voice = "may-may";
         return voice;
     }
+
     public static void main(String[] args) {
         System.out.println("There is gav's food.");
         Cat gav = new Cat();
