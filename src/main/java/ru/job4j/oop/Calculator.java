@@ -11,7 +11,7 @@ public class Calculator {
         return x - m;
     }
 
-    public int divide( int d) {
+    public int divide(int d) {
         return x / d;
     }
 
