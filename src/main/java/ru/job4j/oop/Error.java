@@ -23,7 +23,7 @@ public class Error {
     }
 
     public static void main(String[] args) {
-        Error error = new Error(true, 404,"Компьютер взорвется через 5 секнуд.");
+        Error error = new Error(true, 404, "Компьютер взорвется через 5 секнуд.");
         Error err = new Error();
         error.printInfo();
         err.printInfo();
