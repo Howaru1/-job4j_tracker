@@ -20,7 +20,6 @@ public class Calculator {
     }
 
     public int sumAllOperation(int s) {
-        Calculator calculator = new Calculator();
         return sum(s) + minus(s) + divide(s) + multiply(s);
     }
 
