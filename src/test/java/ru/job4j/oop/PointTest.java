@@ -54,7 +54,7 @@ class PointTest {
 
         double distanceAC = a.distance3d(c);
         double expectedAC = 6.403;
-        assertThat(distanceAC).isEqualTo(expectedAC,offset(0.001));
+        assertThat(distanceAC).isEqualTo(expectedAC, offset(0.001));
 
         double distanceBC = b.distance3d(c);
         double expectedBC = 6.164;
