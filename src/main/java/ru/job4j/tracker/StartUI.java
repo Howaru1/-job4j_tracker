@@ -3,6 +3,7 @@ package ru.job4j.tracker;
 import java.util.Scanner;
 
 public class StartUI {
+
     public void init(Scanner scanner, Tracker tracker) {
         boolean run = true;
         while (run) {
@@ -12,6 +13,16 @@ public class StartUI {
             if (select != 6) {
                 System.out.println("Пользователь выбрал: " + select);
             } else {
+                run = false;
+            }
+            if (select == 0) {
+                System.out.println("=== Создание новой заявки ===");
+                System.out.print("Введите имя: ");
+                String name = scanner.nextLine();
+                Item item = new Item(name);
+                tracker.add(item);
+                System.out.println("Добавленная заявка: " + item);
+            } else if (select == 6) {
                 run = false;
             }
         }
