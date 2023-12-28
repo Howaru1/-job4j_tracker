@@ -19,13 +19,12 @@ public class Matches {
                 System.out.println("Введите правильное число!");
             }
         }
-        if (count == 0) {
-            if (!turn) {
-                System.out.println("Выиграл первый игрок");
-            } else {
-                System.out.println("Выиграл второй игрок");
-            }
+        if (!turn) {
+            System.out.println("Выиграл первый игрок");
+        } else {
+            System.out.println("Выиграл второй игрок");
         }
     }
 }
+
 
