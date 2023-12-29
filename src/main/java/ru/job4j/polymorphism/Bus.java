@@ -3,18 +3,17 @@ package ru.job4j.polymorphism;
 public class Bus implements Transport {
     @Override
     public void drive() {
-
+        System.out.println("Движение вперед");
     }
 
     @Override
-    public int pas() {
-        return 0;
+    public void pas(int passengers) {
+        System.out.println(passengers + " пассажиров");
+
     }
 
     @Override
     public double refuel(double price) {
-        double fuel = 80.4;
-        double rate = 55.75;
-        return fuel * rate;
+        return price * 80.45;
     }
 }
