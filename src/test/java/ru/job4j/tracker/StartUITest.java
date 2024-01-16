@@ -37,7 +37,7 @@ class StartUITest {
         tracker.add(item);
         String[] answers = {
                 String.valueOf(item.getId()),
-                "edited item"
+
         };
         StartUI.deleteItem(new MockInput(answers), tracker);
         Item edited = tracker.findById(item.getId());
