@@ -5,10 +5,10 @@ import java.util.Arrays;
 
 public class StartUI {
 
-    private final Output output;
+    private final Output out;
 
     public StartUI(Output output) {
-        this.output = output;
+        this.out = output;
     }
 
     public void init(Input input, Tracker tracker, UserAction[] actions) {
@@ -22,9 +22,9 @@ public class StartUI {
     }
 
     private void showMenu(UserAction[] actions) {
-        System.out.println("Меню:");
+        out.println("Меню:");
         for (int index = 0; index < actions.length; index++) {
-            System.out.println(index + ". " + actions[index].name());
+            out.println(index + ". " + actions[index].name());
         }
     }
 
